@@ -1,8 +1,8 @@
 .container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; 
+    padding: 20px; 
     justify-items: center;
 }
   
@@ -12,7 +12,7 @@
     overflow: hidden;
     color: white;
     width: 100%;
-    max-width: 250px;
+    max-width: 300px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
@@ -22,7 +22,7 @@
 
 .produto img {
     width: 100%;
-    height: 180px;
+    height: 360px;
     object-fit: cover;
 }
   
