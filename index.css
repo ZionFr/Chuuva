@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 100px;
+    padding: 150px;
     box-sizing: border-box;
     color: white;
     font-family: Arial, sans-serif;
@@ -25,4 +25,24 @@
     font-size: 50px;
     margin-top: 10px;
     color: white;
+}
+
+.botaobusca {
+    margin: 30px auto 0 auto; 
+    width: 100%;
+    max-width: 500px;
+    padding: 15px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    background-color: #f2f2f2;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.botaobusca:hover {
+    background-color: #e0e0e0;
 }
