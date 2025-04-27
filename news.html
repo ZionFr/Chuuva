@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
         <nav>
             <div class="logo-container">
-                <a class="logo_img" href="index.html" ><img src="midia/chuva_branca2.png" width="72px"></a>
+                <a class="logo_img" href="index.html" ><img src="./img/chuva_branca2.png" width="72px"></a>
                 <a class="logo" href="index.html" >Chuuva</a>
             </div>
             <div class="mobile-menu">
@@ -28,6 +29,65 @@
         </nav>
     </header>
 
-    
+     <!-- FOOTER -->
+
+     <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <img src="./img/chuva_branca2.png">
+                <p>Contatos</p>
+                <div id="footer_social_media">
+                    <a href="https://github.com/ZionFr/Chuuva" class="footer-link" id="github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div id="footer_subscribe">
+                <h3>Suporte</h3>
+
+                <p>
+                    Para qualquer dúvidas adicionais quanto ao funcionamento de nossa plataforma mande-nos seu email para melhor contato.
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email" placeholder="Digite seu e-mail">
+
+                    <button onclick="emailConfirmar()">
+                        <i class="fa-regular fa-envelope"></i>
+                        <script>
+                            function emailConfirmar() {
+                                var email = document.getElementById("email").value;
+                                var verificar = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    
+                                if (email.trim() === "") {
+                                    window.alert("Por favor, digite um e-mail.");
+                                } else if (regexEmail.test(email)) {
+                                    window.alert("Seu e-mail foi computado, aguarde nossa resposta.");
+                                } else {
+                                    window.alert("Digite um e-mail válido.");
+                                }
+                            }
+                        </script>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2025 Chuuva. all rights reserved
+        </div>
+    </footer>
+
 </body>
 </html>
