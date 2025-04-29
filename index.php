@@ -73,7 +73,7 @@ if(isset($_POST['email']))
         else
         {
             ?>
-            <div class="msg-erro>
+            <div class="msg-erro">
             <?php echo "Erro: ".$u->msgErro; ?>
             </div>
             <?php
@@ -82,7 +82,7 @@ if(isset($_POST['email']))
     }else
     {
         ?>
-        <div class="msg-erro>
+        <div class="msg-erro">
         <?php echo "Preencha todos os campos!"; ?>
         </div>
         <?php
