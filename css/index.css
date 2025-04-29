@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 .boxinicio {
     height: 100vh;
     width: 100%;
@@ -7,7 +9,7 @@
     padding: 150px;
     box-sizing: border-box;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: "Press Start 2P", sans-serif;
 }
 
 

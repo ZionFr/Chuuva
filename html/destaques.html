@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Destaques</title>
+<link rel="shortcut icon" href="./img/chuva_branca2.png" type="image/x-icon">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="sliderstyle.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a class="logo_img" href="index.html" ><img src="midia/chuva_branca2.png" width="72px"></a>
+                <a class="logo" href="index.html" >Chuuva</a>
+            </div>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="destaques.html">Destaques</a></li>
+                <li><a href="jogosPC.html">Jogos Pc</a></li>
+                <li><a href="jogosConsole.html">Jogos Console</a></li>
+                <li><a href="jogosMobile.html">Jogos Mobile</a></li>
+                <li><a href="...">Entrar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Slider Manual -->
+<section class="slider">
+    <input type="radio" name="radio-btn" id="radio1" checked>
+    <input type="radio" name="radio-btn" id="radio2">
+    <input type="radio" name="radio-btn" id="radio3">
+    <input type="radio" name="radio-btn" id="radio4">
+  
+    <div class="slides">
+      <div class="slide">
+        <a href="TLOU2.html"><img src="midia/The last of us part 2 chuuva.jpg" alt="The last of us parte 2"></a>
+      </div>
+      <div class="slide">
+        <a href=""><img src="midia/Monster hunter wilds chuuva.jpg" alt="Monster hunter wilds"></a>
+      </div>
+      <div class="slide">
+        <a href=""><img src="midia/alan wake 2.jpg" alt="Alan wake 2"></a>
+      </div>
+      <div class="slide">
+        <a href=""><img src="midia/Blue prince chuuva.jpg" alt="Blue prince"></a>
+      </div>
+    </div>
+  
+    <div class="navigation-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+    </div>
+
+    <!-- Setas laterais -->
+<div class="nav-arrow left" onclick="prevSlide()">&#10094;</div>
+<div class="nav-arrow right" onclick="nextSlide()">&#10095;</div>
+
+</section>
+<script>
+    let currentSlide = 1;
+  
+    function showSlide(index) {
+      const totalSlides = 4;
+      if (index < 1) index = totalSlides;
+      if (index > totalSlides) index = 1;
+      document.getElementById('radio' + index).checked = true;
+      currentSlide = index;
+    }
+  
+    function nextSlide() {
+      showSlide(currentSlide + 1);
+    }
+  
+    function prevSlide() {
+      showSlide(currentSlide - 1);
+    }
+  </script>
+</body>
+</html>
