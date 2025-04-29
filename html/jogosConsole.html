@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jogos Console</title>
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/styleconsole.css">
+  <link rel="stylesheet" href="../css/jogosPC.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -29,83 +29,68 @@
         <li><a href="jogosPC.html">Jogos Pc</a></li>
         <li><a href="jogosConsole.html">Jogos Console</a></li>
         <li><a href="jogosMobile.html">Jogos Mobile</a></li>
+        <li><a href="contato.html">Contato</a></li>
         <li><a href="...">Entrar</a></li>
       </ul>
     </nav>
   </header>
-  <main class="container">
-    <div class="card">
-      <img src="../img/Outlast.jpeg" alt="The Outlast Trials">
-      <div class="card-content">
-        <h3>The Outlast Trials</h3>
-        <p class="preço">R$ 159,95</p>
-        <button onclick="comprar('The Outlast Trials')">Comprar</button>
-      </div>
+  <div class="container">
+    <div class="produto">
+        <img src="../img/Baldurs.jpg">
+        <div class="conteudo">
+            <div class="nome">Baldur's Gate 3</div>
+            <div class="preco">R$ 259,95</div>
+            <button onclick="comprar('Baldurs Gate 3')">Comprar</button>
+        </div>
+    </div>
+    <div class="produto">
+        <img src="../img/Outlast.jpeg">
+        <div class="conteudo">
+            <div class="nome">The Outlast Trials</div>
+            <div class="preco">R$ 159,95</div>
+            <button onclick="comprar('The Outlast Trials')">Comprar</button>
+        </div>
+    </div>
+    <div class="produto">
+        <img src="../img/Hades.jpg">
+        <div class="conteudo">
+            <div class="nome">Hades</div>
+            <div class="preco">R$ 97,22</div>
+            <button onclick="comprar('Hades')">Comprar</button>
+        </div>
+    </div>
+    <div class="produto">
+        <img src="../img/Life_is_strange.png">
+        <div class="conteudo">
+            <div class="nome">Life is Strange 2</div>
+            <div class="preco">R$ 96,00</div>
+            <button onclick="comprar('Life is Strange')">Comprar</button>
+        </div>
     </div>
 
-    <div class="card">
-      <img src="../img/Hades.jpg" alt="Hades">
-      <div class="card-content">
-        <h3>Hades</h3>
-        <p class="preço">R$ 97,22</p>
-        <button onclick="comprar('Hades')">Comprar</button>
-      </div>
+    <div class="produto">
+        <img src="../img/Astroneer.jpg">
+        <div class="conteudo">
+            <div class="nome">Astroneer</div>
+            <div class="preco">R$ 87,45</div>
+            <button onclick="comprar('Astroneer')">Comprar</button>
+        </div>
     </div>
 
-    <div class="card">
-      <img src="../img/Life_is_strange.png" alt="Life is Strange">
-      <div class="card-content">
-        <h3>Life is Strange 2</h3>
-        <p class="preço">R$ 96,00</p>
-        <button onclick="comprar('Life is Strange 2')">Comprar</button>
-      </div>
+    <div class="produto">
+        <img src="../img/Elden_ring.jpg">
+        <div class="conteudo">
+            <div class="nome">Elden Ring</div>
+            <div class="preco">R$ 249,99</div>
+            <button onclick="comprar('Elden Ring')">Comprar</button>
+        </div>
     </div>
-    <div class="card">
-      <img src="../img/Astroneer.jpg" alt="Astroneer">
-      <div class="card-content">
-        <h3>Astroneer</h3>
-        <p class="preço">R$ 87,45</p>
-        <button onclick="comprar('Astroneer')">Comprar</button>
-      </div>
-    </div>
-    <div class="card">
-      <img src="../img/Baldurs.jpg" alt="Baldur's Gate 3">
-      <div class="card-content">
-        <h3>Baldur's Gate 3</h3>
-        <p class="preço">R$ 259,95</p>
-        <button onclick="comprar('Baldurs Gate 3')">Comprar</button>
-      </div>
-    </div>
-    <div class="card">
-      <img src="../img/Split_fiction.jpg" alt="Split Fiction">
-      <div class="card-content">
-        <h3>Split Fiction</h3>
-        <p class="preço">R$ 249,00</p>
-        <button onclick="comprar('Split Fiction')">Comprar</button>
-      </div>
-    </div>
-    <div class="card">
-      <img src="../img/Ori.jpg" alt="Ori and the Will of the Wisps">
-      <div class="card-content">
-        <h3>Ori and the Will of the Wisps</h3>
-        <p class="preço">R$ 129,00</p>
-        <button onclick="comprar('Ori and the Will of the Wisps')">Comprar</button>
-      </div>
-    </div>
-    <div class="card">
-      <img src="../img/Elden_ring.jpg" alt="ELDEN RING">
-      <div class="card-content">
-        <h3>ELDEN RING</h3>
-        <p class="preço">R$ 299,90</p>
-        <button onclick="comprar('ELDEN RING')">Comprar</button>
-      </div>
-    </div>
-  </main>
-  <script>
-    function comprar(jogo) {
-      alert(`Você comprou o jogo: ${jogo}`);
-    }
-  </script>
+</div>
+<script>
+  function comprar(jogo) {
+    alert(`Você comprou o jogo: ${jogo}`);
+  }
+</script>
 
   <!-- FOOTER -->
 
