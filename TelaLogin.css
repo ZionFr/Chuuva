@@ -22,6 +22,7 @@ input{
     font-size: 16pt;
     padding: 10px 20px;
     cursor: pointer;
+    text-align: center;
 }
 div#corpo-form{
     /* background-color: red; */
