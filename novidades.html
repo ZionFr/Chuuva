@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sliderstyle.css">
+    <link rel="stylesheet" href="sobre.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            main h1 {
+                text-align: center;
+                color: white;
+                margin-top: 50px;
+            }
+            .sobre-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .sobre {
+        background-color: #0B3B91;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        flex: 1;
+        text-align: center;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+                    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, 
+                    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+    .sobre h2 {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .sobre p {
+        font-size: 20px;
+        line-height: 1.6;
+        text-align: center;
+    }
+        </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a class="logo_img" href="index.html"><img src="img/chuva_branca2.png" width="72px"></a>
+                <a class="logo" href="index.html">Chuuva</a>
+            </div>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="sobre.html">Sobre</a></li>
+                <li class="dropdown"><a href="#"> Produtos </a>
+                    <div class="dropdown-menu">
+                        <a href="jogosPC.html">Jogos Pc</a>
+                        <a href="jogosConsole.html">Jogos Console</a>
+                        <a href="jogosMobile.html">Jogos Mobile</a>
+                    </div>
+                </li>
+                <li><a href="novidades.html">Novidades</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="index.php">Entrar</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <h1>ALGUNS JOGOS QUE LANÇARÃO EM BREVE NA CHUUVA</h1>
+    <section class="slider">
+        <input type="radio" name="radio-btn" id="radio1" checked>
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+
+  <!-- Slides -->
+  <div class="slides">
+    <div class="slide">
+      <img src="img/ninja gaiden 4.jpg" alt="ninja gaiden 4">
+    </div>
+    <div class="slide">
+      <img src="img/border lands 4.jpg" alt="borderlands 4">
+    </div>
+    <div class="slide">
+      <img src="img/Firebreak.jpg" alt="Firebreak">
+    </div>
+    <div class="slide">
+      <img src="img/Metal Gear Solid Delta.webp" alt="Metal Gear Solid Delta">
+    </div>
+  </div>
+
+  <!-- Botões de navegação -->
+  <div class="navigation-manual">
+    <label for="radio1" class="manual-btn"></label>
+    <label for="radio2" class="manual-btn"></label>
+    <label for="radio3" class="manual-btn"></label>
+    <label for="radio4" class="manual-btn"></label>
+  </div>
+  <!-- Setas laterais -->
+<div class="nav-arrow left" onclick="prevSlide()">&#10094;</div>
+<div class="nav-arrow right" onclick="nextSlide()">&#10095;</div>
+</section>
+<div class="sobre-container">
+    <div class="sobre">
+        <h2>Ninja Gaiden 4</h2>
+        <p>Ninja Gaiden 4 é um futuro jogo de ação e aventura desenvolvido em conjunto pela Team Ninja e PlatinumGames e publicado pela Xbox Game Studios. É o primeiro título principal da série Ninja Gaiden da Koei Tecmo em mais de 13 anos, e a sequência direta de Ninja Gaiden 3.</p>
+    </div>
+    <div class="sobre">
+        <h2>Borderlands 4</h2>
+        <p>Borderlands 4 é um próximo jogo de tiro em primeira pessoa desenvolvido pela Gearbox Software e publicado pela 2K. É uma sequência de Borderlands 3 e a quinta entrada na série principal Borderlands.</p>
+    </div>
+    <div class="sobre">
+        <h2>Firebreak</h2>
+        <p>FBC: Firebreak é um próximo videogame de tiro em primeira pessoa desenvolvido e publicado pela Remedy Entertainment. Ambientado algum tempo após os eventos de Control, segue uma unidade especial de soldados chamada Firebreak.</p>
+    </div>
+    <div class="sobre">
+        <h2>Metal Gear Solid Delta</h2>
+        <p>Metal Gear Solid Delta: Snake Eater é um próximo jogo de furtividade de ação e aventura desenvolvido e publicado pela Konami. É um remake do jogo Metal Gear Solid 3: Snake Eater de 2004, a quinta entrada principal da franquia Metal Gear e o primeiro jogo cronológico geral.</p>
+    </div>
+</div>
+</main>
+
+     <!-- FOOTER -->
+
+     <footer>
+      <div id="footer_content">
+          <div id="footer_contacts">
+              <img src="./img/chuva_branca2.png">
+              <p>Contatos</p>
+              <div id="footer_social_media">
+                  <a href="https://github.com/ZionFr/Chuuva" class="footer-link" id="github">
+                      <i class="fa-brands fa-github"></i>
+                  </a>
+
+                  <a href="#" class="footer-link" id="instagram">
+                      <i class="fa-brands fa-instagram"></i>
+                  </a>
+
+                  <a href="#" class="footer-link" id="whatsapp">
+                      <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+
+              </div>
+          </div>
+
+          <div id="footer_subscribe">
+              <h3>Suporte</h3>
+
+              <p>
+                  Para qualquer dúvidas adicionais quanto ao funcionamento de nossa plataforma mande-nos seu email para melhor contato.
+              </p>
+
+              <div id="input_group">
+                  <input type="email" id="email" placeholder="Digite seu e-mail">
+
+                  <button onclick="emailConfirmar()">
+                      <i class="fa-regular fa-envelope"></i>
+                      <script src="./js/footer.js"></script>
+                      
+                  </button>
+              </div>
+          </div>
+      </div>
+
+      <div id="footer_copyright">
+          &#169
+          2025 Chuuva. all rights reserved
+      </div>
+  </footer>
+
+<script>
+    let currentSlide = 1;
+  
+    function showSlide(index) {
+      const totalSlides = 4;
+      if (index < 1) index = totalSlides;
+      if (index > totalSlides) index = 1;
+      document.getElementById('radio' + index).checked = true;
+      currentSlide = index;
+    }
+  
+    function nextSlide() {
+      showSlide(currentSlide + 1);
+    }
+  
+    function prevSlide() {
+      showSlide(currentSlide - 1);
+    }
+  </script>
+</body>
+</html>
