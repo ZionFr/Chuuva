@@ -7,5 +7,5 @@ O objetivo do trabalho foi criar uma aplicação web simples de uma empresa virt
 Você pode clonar ou baixar esse projeto em ZIP:
 git clone https://github.com/ZionFr/chuuva-definitivo.git
 
-Se quiser apenas visualizar o visual do site, abra o arquivo index.html no navegador.
+Se quiser apenas visualizar o visual do site, abra o arquivo index.html no navegador ou vá em: https://zionfr.github.io/Chuuva
 
